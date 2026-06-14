@@ -1,0 +1,47 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1250px;
+    }
+}
+.top-header{
+    .menu_top{
+        padding: 5px 0px;
+        float: right;
+        display: flex; 
+        align-items: center;
+        li{
+            display: inline-block;
+            margin: 0px 7px;
+            position: relative; 
+            &::after{
+                position: absolute;
+                content: "|";
+                top: 0px;
+                right: -9px;
+            } 
+            &:nth-child(4){ 
+                &::after{
+                    display: none;
+                } 
+            }
+        }
+        .social-icons{
+            a{
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid transparent;
+                &:nth-child(1){
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
+    
