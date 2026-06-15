@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 :root{
-    --color-primary:#282a7f;
+    --color-primary:#ba131a;
     --color-heading:#272727;
     --color-text-menu:#000;
     --color-text:#444;
@@ -28,7 +28,7 @@
     
 }
 html {
-    font-size:15px; 
+    font-size:16px; 
 }
 p {
     margin: 0 0 10px 0;
@@ -71,7 +71,7 @@ a, span, p , button {
 } 
 body {
     font-family:var(--font-body); 
-    font-size: 15px;
+    font-size: 16px;
     font-weight:400;
     line-height: 22px;
     letter-spacing: 0em;
@@ -289,7 +289,7 @@ strong{
     text-transform: uppercase;
 } 
 .nav-menu > .menu-item.is-active > .menu-link {
-    color:var(--color-primary);
+    //color:var(--color-primary);
 } 
 .nav-menu > .menu-item:hover > .menu-link {
     color:var(--color-primary);
@@ -304,10 +304,10 @@ strong{
 }
 
 .nav-menu .menu-link {
-    padding: 9px 18px; 
+    padding: 0px 8px; 
     text-align: left;
     display: block;
-    font-size: 18px;
+    font-size: 15px;
     color:var(--color-text-menu);
     font-weight:400; 
     text-transform: uppercase;
@@ -385,8 +385,7 @@ strong{
     .nav-toggle {
         display: none;
     }
-    .nav-menu > .menu-item:hover,
-    .nav-menu > .menu-item.is-active {
+    .nav-menu > .menu-item:hover{
         background-color: transparent; /* background khi hover và active menu-item */
     }
 
@@ -510,10 +509,9 @@ strong{
     .nav-menu,
     .nav {
         background: none;
-    }
-    .nav-menu > .menu-item.is-active > .menu-link,
+    } 
     .nav-menu > .menu-item:hover > .menu-link {
-        color: var(--color-primary); /*color khi hover và active menu pc*/
+        color: var(--bg-body); /*color khi hover và active menu pc*/
     }
 
     .nav-dropdown > .menu-item {
