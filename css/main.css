@@ -20404,7 +20404,7 @@ readers do not read off random characters that represent icons */
 :root {
   --color-primary:#ba131a;
   --color-heading:#272727;
-  --color-text-menu:#000;
+  --color-text-menu:#fff;
   --color-text:#444;
   --color-text-body:#000;
   --color-border:#e2e2e2;
@@ -20871,13 +20871,7 @@ strong {
   .nav-menu > .menu-item {
     float: left;
     border-top: 0px;
-    padding: 10px 25px;
-  }
-  .nav-menu > .menu-item:nth-child(2) {
-    padding-left: 0px;
-  }
-  .nav-menu > .menu-item:last-child {
-    padding-right: 0px;
+    padding: 13px 10px;
   }
   .nav-menu > .menu-item.has-dropdown {
     position: relative;
@@ -21847,6 +21841,9 @@ button.scroll-top {
 .menu_header .search_mb .search-top {
   position: relative;
 }
+.menu_header .search_mb .search-top a {
+  color: var(--color-text-menu);
+}
 .menu_header .search_mb .search-top .search-form {
   position: absolute;
   width: 260px;
@@ -21901,7 +21898,39 @@ button.scroll-top {
 }
 .menu_header .search_mb:hover .search-top .search-form {
   visibility: visible;
-  bottom: -74px;
+  bottom: -77px;
   z-index: 99;
   opacity: 1;
+}
+.menu_header .btn-call {
+  padding: 10px;
+}
+.menu_header .header-button {
+  background: linear-gradient(to top, #cf8b01, #fff37b, #cf8b01);
+  color: #7a1717;
+  border-radius: 50px;
+  border: none;
+  font-weight: bolder;
+  letter-spacing: 0.03em;
+  max-width: 100%;
+  min-height: 28px;
+  min-width: 24px;
+  padding: 0 1.2em;
+}
+.menu_header .header-button a {
+  font-size: 0.8em;
+}
+
+.slider .owl-dots {
+  bottom: 10px;
+  text-align: right;
+  right: 25%;
+}
+.slider .owl-dots .owl-dot span {
+  width: 40px;
+  height: 6px;
+  border-radius: 0px;
+}
+.slider .owl-dots .owl-dot.active span {
+  background-color: var(--bg-body);
 }/*# sourceMappingURL=main.css.map */

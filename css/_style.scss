@@ -12,7 +12,7 @@
         li{
             font-size: 0.8em;
             font-weight: 600;
-            display: inline-block;
+            display: inline-block; 
             margin: 0px 7px;
             position: relative; 
             &::after{
@@ -73,6 +73,9 @@
     .search_mb{ 
         .search-top {
             position: relative; 
+            a{
+                color: var(--color-text-menu);
+            }
             .search-form { 
                 position: absolute;
                 width: 260px; 
@@ -127,12 +130,49 @@
             .search-top{
                 .search-form{
                     visibility:visible;
-                    bottom:-74px;
+                    bottom:-77px;
                     z-index: 99;
                     opacity: 1;
                 }
             }
         }
+    } 
+    .btn-call{
+        padding: 10px;
     }
-    
+    .header-button{
+        background: linear-gradient(to top, #cf8b01, #fff37b, #cf8b01);
+        color: #7a1717;
+        border-radius: 50px;
+        border:none;
+        font-weight: bolder;
+        letter-spacing: .03em; 
+        max-width: 100%; 
+        min-height: 28px;
+        min-width: 24px;
+        padding: 0 1.2em;
+        a{
+            font-size: 0.8em;
+        }
+    }
+}
+// slider 
+.slider{
+    .owl-dots{
+        bottom: 10px; 
+        text-align: right;
+        right: 25%;
+        .owl-dot{
+            span{
+                width: 40px;
+                height: 6px;
+                border-radius: 0px;
+            }
+            &.active{
+                span{
+                    background-color: var(--bg-body);
+                } 
+            } 
+        }
+    }
 }

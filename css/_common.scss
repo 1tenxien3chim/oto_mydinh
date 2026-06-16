@@ -11,7 +11,7 @@
 :root{
     --color-primary:#ba131a;
     --color-heading:#272727;
-    --color-text-menu:#000;
+    --color-text-menu:#fff;
     --color-text:#444;
     --color-text-body:#000;
     --color-border:#e2e2e2;
@@ -495,14 +495,8 @@ strong{
     .nav-menu > .menu-item { 
         float: left;
         border-top: 0px; 
-        padding:10px 25px;
-    }
-    .nav-menu > .menu-item:nth-child(2){
-        padding-left: 0px;
-    }
-    .nav-menu > .menu-item:last-child{
-        padding-right: 0px;
-    }
+        padding:13px 10px;
+    } 
     .nav-menu > .menu-item.has-dropdown { 
         position: relative;
     }
