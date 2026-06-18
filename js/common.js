@@ -134,7 +134,33 @@ $(".slider").owlCarousel({
     dots: true,
     dotsEach: false,
     loop: true,
-    nav: false,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
+    margin:0,
+    animateOut: ['fadeOut'], // default: false
+    animateIn: ['fadeIn'], // default: false
+    center: false,
+});
+
+
+$(".slider-seller").owlCarousel({
+    items: 1,
+    responsive: {
+        1200: { item: 1, },// breakpoint from 1200 up
+        992: { items: 1, },
+        768: { items: 1, },
+        480: { items: 1, },
+        0: { items: 1, }
+    },
+    rewind: false,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 3000, //slide speed smooth
+    dots: true,
+    dotsEach: false,
+    loop: true,
+    nav: true,
     navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
     margin:0,
     animateOut: ['fadeOut'], // default: false

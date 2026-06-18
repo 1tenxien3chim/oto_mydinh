@@ -289,10 +289,7 @@ strong{
 .nav-menu .menu-item {
     border-top: 1px solid #f3f3f3;
     text-transform: uppercase;
-} 
-.nav-menu > .menu-item.is-active > .menu-link {
-    //color:var(--color-primary);
-} 
+}  
 .nav-menu > .menu-item:hover > .menu-link {
     color:var(--color-primary);
 }
@@ -537,7 +534,7 @@ strong{
 
 .menu_mb {
     position: fixed;
-    top: 0;
+    top: -1px;
     width: 100%;
     background: var(--bg-body);
     z-index: 9;
