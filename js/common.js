@@ -116,6 +116,46 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+//  cout down 
+
+var started = false;
+
+$(window).on('scroll', function () {
+
+    if (started) return;
+
+    var top = $('.counter-section').offset().top;
+    var winBottom = $(window).scrollTop() + $(window).height();
+
+    if (winBottom > top + 100) {
+
+        started = true;
+
+        $('.counter-number[data-target]').each(function () {
+
+            var $this = $(this);
+            var target = parseInt($this.data('target'));
+            var count = 0;
+
+            var timer = setInterval(function () {
+
+                count += Math.ceil(target / 100);
+
+                if (count >= target) {
+                    count = target;
+                    clearInterval(timer);
+                }
+
+                $this.text(count.toLocaleString() + '+');
+
+            }, 20);
+
+        });
+    }
+
+});
+//  end cout down 
+
 
 $(".slider").owlCarousel({
     items: 1,
@@ -167,5 +207,32 @@ $(".slider-seller").owlCarousel({
     animateIn: ['fadeIn'], // default: false
     center: false,
 });
+
+
+$(".slider-dt").owlCarousel({
+    items: 7,
+    responsive: {
+        1200: { item: 7, },// breakpoint from 1200 up
+        992: { items: 5, },
+        768: { items: 3, },
+        480: { items: 2, },
+        0: { items: 2, }
+    },
+    rewind: false,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 3000, //slide speed smooth
+    dots: false,
+    dotsEach: false,
+    loop: true,
+    nav: false,
+    navText: ['<i class="fa fa-angle-left arrow-slider"></i>', '<i class="fa fa-angle-right arrow-slider"></i>'],
+    margin:30,
+    animateOut: ['fadeOut'], // default: false
+    animateIn: ['fadeIn'], // default: false
+    center: false,
+});
+
 
 
