@@ -509,7 +509,7 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <a href="#" class="tool-item">
+                    <a data-toggle="modal" data-target="#myModal" class="tool-item">
                         <div class="tool-icon">
                             <img src="img/du-toan-chi-phi-mua-xe.png" alt="Dự toán chi phí">
                         </div>
@@ -528,10 +528,81 @@
                             Tính giá trả góp
                         </div>
                     </a>
-                </div>
+                </div> 
 
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-md"> 
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="cost-estimator">
+                                <div class="form-group">
+                                    <label>Phiên bản</label>
+                                    <select class="form-control">
+                                        <option>Chọn phiên bản</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tỉnh / TP</label>
+                                    <select class="form-control">
+                                        <option>Chọn tỉnh thành</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Khu vực <span>*</span></label>
+                                    <select class="form-control">
+                                        <option>Chọn khu vực</option>
+                                    </select>
+                                </div>
+
+                                <div class="cost-estimator__result">
+                                    <h3>Dự tính chi phí</h3>
+
+                                    <div class="cost-row">
+                                        <span>Giá niêm yết</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row">
+                                        <span>Phí trước bạ (%)</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row">
+                                        <span>Phí sử dụng đường bộ (01 năm)</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row">
+                                        <span>Bảo hiểm trách nhiệm dân sự (01 năm)</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row">
+                                        <span>Phí đăng ký biển số</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row">
+                                        <span>Phí đăng kiểm</span>
+                                        <strong>--</strong>
+                                    </div>
+
+                                    <div class="cost-row total">
+                                        <span>Tổng cộng</span>
+                                        <strong>--</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
+
     </section> 
     <!--end quick-tool --> 
     <!--best-seller --> 
@@ -636,9 +707,9 @@
     <!-- honda-service -->  
     <section class="honda-service">
         <div class="container"> 
-            <div class="section-title">
+            <div class="section-heading text-center">
                 <h2>CÁC DỊCH VỤ TẠI HONDA MỸ ĐÌNH</h2>
-                <span></span>
+                <span class="heading-line"></span>
             </div> 
             <div class="row"> 
                 <!-- Cột trái -->
@@ -842,9 +913,9 @@
     <!-- customer-review -->
     <section class="customer-review">
         <div class="container"> 
-            <div class="section-title text-center">
+            <div class="section-heading text-center">
                 <h2>KHÁCH HÀNG NÓI GÌ VỀ HONDA MỸ ĐÌNH</h2>
-                <span class="title-line"></span>
+                <span class="heading-line"></span>
             </div>
 
             <div class="row"> 
@@ -889,9 +960,9 @@
     <!-- featured-news -->
     <section class="featured-news">
         <div class="container"> 
-            <div class="section-title text-center">
+            <div class="section-heading text-center">
                 <h2>TIN TỨC NỔI BẬT</h2>
-                <span class="title-line"></span>
+                <span class="heading-line"></span>
             </div>
 
             <div class="row">
