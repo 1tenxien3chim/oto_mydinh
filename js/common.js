@@ -156,6 +156,32 @@ $(window).on('scroll', function () {
 });
 //  end cout down 
 
+// menu right 
+
+$(document).ready(function () { 
+    // thêm icon cho menu có submenu
+    $('.sidebar-menu .has-sub-menu > a').append(
+        '<i class="fa fa-angle-down"></i>'
+    );
+
+    // click mở submenu
+    $('.sidebar-menu').on('click', '.has-sub-menu > a', function (e) {
+ 
+        e.preventDefault();
+
+        var parent = $(this).parent();
+
+        parent.toggleClass('active');
+
+        parent
+            .children('.sub-menu')
+            .stop()
+            .slideToggle(300);
+
+    });
+
+});
+// end menu right 
 
 $(".slider").owlCarousel({
     items: 1,
