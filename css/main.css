@@ -23516,4 +23516,28 @@ button.scroll-top {
   .news-list .news-card__content p {
     font-size: 15px;
   }
+}
+
+.detail-news h1 {
+  font-size: 27.2px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .detail-news h1 {
+    font-size: 20px;
+  }
+}
+.detail-news .about-dealer__image {
+  margin-bottom: 20px;
+}
+.detail-news .about-dealer__image img {
+  max-width: 100%;
+}
+.detail-news .about-dealer__content p {
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--color-text-body);
+}
+.detail-news .about-dealer__content ul {
+  margin: 10px 0px 10px 20px;
 }/*# sourceMappingURL=main.css.map */
