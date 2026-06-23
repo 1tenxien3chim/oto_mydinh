@@ -122,9 +122,13 @@ var started = false;
 
 $(window).on('scroll', function () {
 
-    if (started) return;
-
-    var top = $('.counter-section').offset().top;
+    if (started) return; 
+    if (
+        window.location.pathname === '/' ||
+        window.location.pathname === '/index.html'
+    ) {
+        var top = $('.counter-section').offset().top;
+    }
     var winBottom = $(window).scrollTop() + $(window).height();
 
     if (winBottom > top + 100) {
@@ -182,6 +186,30 @@ $(document).ready(function () {
 
 });
 // end menu right 
+
+//  quanlyti
+$(document).on('click', '.quantity-box .plus', function () {
+    var $input = $(this).siblings('input');
+    $input.val((parseInt($input.val()) || 1) + 1);
+});
+
+$(document).on('click', '.quantity-box .minus', function () {
+    var $input = $(this).siblings('input');
+    var value = parseInt($input.val()) || 1;
+
+    if (value > 1) {
+        $input.val(value - 1);
+    }
+});
+
+$(document).on('input', '.quantity-box input', function () {
+    this.value = this.value.replace(/\D/g, '');
+
+    if (this.value < 1 || this.value === '') {
+        this.value = 1;
+    }
+});
+// end quanlyti
 
 $(".slider").owlCarousel({
     items: 1,
