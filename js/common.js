@@ -229,6 +229,19 @@ $(window).on('load', function () {
 
 // end pup up
 
+//  liên kết hiển thị
+$(function(){
+
+    $('.toolbar-toggle').on('click', function(){
+
+        $('.fixed-toolbar').toggleClass('collapsed');
+
+    });
+
+});
+
+// end liên kết hiển thị
+
 
 
 $(".slider").owlCarousel({
