@@ -211,6 +211,26 @@ $(document).on('input', '.quantity-box input', function () {
 });
 // end quanlyti
 
+// pup up 
+
+$(window).on('load', function () {
+
+    var path = window.location.pathname;
+
+    if (path === '/' || path.endsWith('index.html')) {
+
+        setTimeout(function () {
+            $('#popupPromotion').modal('show');
+        }, 2000); // 2000ms = 2 giây
+
+    }
+
+});
+
+// end pup up
+
+
+
 $(".slider").owlCarousel({
     items: 1,
     responsive: {
